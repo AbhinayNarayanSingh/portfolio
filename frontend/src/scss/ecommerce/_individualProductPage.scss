@@ -1,0 +1,36 @@
+.ecommerce {
+  .IndividualProductPage {
+    margin-top: 2rem;
+    .product-details {
+      display: flex;
+      justify-content: center;
+      .img {
+        padding: 2rem;
+      }
+      .detail {
+        margin: 2rem;
+        h2 {
+          font-size: 1.5rem;
+          max-width: 600px;
+          line-height: 150%;
+        }
+        p {
+          margin-top: 0.5rem;
+        }
+        button {
+          background: transparent;
+          border: 2px solid;
+          padding: 0.5rem 2rem;
+          border-radius: 25px;
+          margin-top: 2rem;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

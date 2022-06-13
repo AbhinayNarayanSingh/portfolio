@@ -1,0 +1,199 @@
+@import "../reset";
+
+.core-body {
+  background-color: #161414;
+  color: white;
+}
+
+.core-body {
+  .hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    h1 {
+      font-family: "Inter";
+      font-weight: 700;
+      color: #f6f4f4;
+
+      font-size: 90px;
+      line-height: 96px;
+    }
+    h2 {
+      text-align: right;
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 37px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ff7517;
+    }
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 12px;
+        line-height: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  h5,
+  h5 span {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  h5 span {
+    color: #ff7517;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      padding: 4rem 0 6rem;
+    }
+    min-height: 100vh;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    .card-container {
+      background: #1d1b1b;
+      padding: 2rem;
+      margin: 0rem 2rem 4rem;
+      max-width: 800px;
+
+      &:hover {
+        filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.25));
+      }
+      h2 {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+      }
+      p {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ffffff;
+        padding-top: 1rem;
+
+        a {
+          font-family: "Roboto";
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 110%;
+          letter-spacing: 0.11em;
+          &:nth-of-type(1) {
+            color: #ffffff;
+            padding-right: 2rem;
+          }
+          &:nth-of-type(2) {
+            color: #ff7517;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      h5 {
+        padding: 2rem 0 4rem;
+      }
+      h5,
+      h5 span {
+        font-size: 18px;
+      }
+      .card-container {
+        margin: 1.5rem 1.5rem 0.5rem;
+        padding: 1.5rem;
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          padding-top: 8px;
+          font-size: 12px;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-container {
+    h5 {
+      padding: 4rem 0 1rem;
+    }
+    p {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      padding: 1rem 0;
+      letter-spacing: normal;
+    }
+  }
+
+  .from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+
+    label {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      color: #ffffff;
+      letter-spacing: normal;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem 1.5rem;
+      margin: 1rem 0 2rem;
+      background: transparent;
+      border: 2px solid #ffffff;
+      width: 300px;
+      border-radius: 10px;
+
+      font-family: "Inter";
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      letter-spacing: normal;
+    }
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      font-family: "Inter";
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      letter-spacing: normal;
+      background-color: white;
+      padding: 0.75rem 2.5rem;
+      border-radius: 25px;
+      font-weight: 500;
+    }
+  }
+}

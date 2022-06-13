@@ -1,0 +1,19 @@
+@media screen and (max-width: 480px) {
+  .ecommerce {
+    .sub-heading {
+      margin: 2rem 0;
+      .body {
+        border-left: 4px solid black;
+        padding-left: 10px;
+        h2 {
+          font-size: 22px;
+          line-height: 28px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}

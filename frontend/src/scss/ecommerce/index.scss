@@ -1,0 +1,13 @@
+@import "../reset";
+@import "./header";
+@import "./footer";
+@import "./productcard";
+@import "./home";
+@import "./individualProductPage";
+
+@import "./mediaquery";
+
+.ecommerce-container {
+  max-width: 1440px;
+  margin: auto;
+}
